@@ -1,0 +1,178 @@
+.sidebar {
+  display: none;
+  position: fixed; /* Fixes the sidebar to the left side */
+  top: 0;
+  left: 0;
+  width: 600px; /* Adjust the width as needed */
+  background-color: #222222; /* Sidebar background color */
+  height: calc(100vh - 148px); /* Height relative to the remaining space, e.g. 100px for the container */
+  overflow-y: auto; /* Allows the sidebar content to scroll if it exceeds height */
+  z-index: 1000; /* Keeps sidebar above other content */
+}
+
+.flight-block {
+  display: flex;
+  background-color: #141414;
+  padding: 15px;
+}
+
+.sidebar > div:nth-child(even) .flight-block {
+  background-color: #222222;
+}
+
+.flight-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flight-name {
+  margin-bottom: 10px;
+  margin: 0px auto 10px auto;
+}
+
+.airport-code {
+  font-size: 14px !important; /* You can change the size to your desired value */
+}
+
+.flight-code {
+  background-color: #086e40;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-letter {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+.airport-details {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.info {
+  margin-bottom: 10px;
+}
+
+.info h2 {
+  margin-bottom: 5px;
+}
+
+.status-actions-container {
+  display: flex;
+}
+
+.actions {
+  margin-bottom: 10px;
+}
+
+.status-actions-container p {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.sidebar button {
+  background-color: #0249c6;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.status {
+  text-align: right;
+  margin-left: auto;
+}
+
+.status p {
+  margin-bottom: 5px;
+}
+
+.status-active {
+  color: #086e40;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  z-index: 1000;
+  overflow-x: auto; /* Add horizontal scrolling */
+}
+
+button {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border: 1px solid #000;
+  cursor: pointer;
+  background: none;
+}
+
+.blue-button {
+  background-color: #0249C6;
+}
+
+.grey-button {
+  background-color: #4F535B;
+}
+
+.unassigned {
+  cursor: not-allowed;
+}
+
+/* Media Queries for responsive design */
+
+/* For small screens */
+@media (max-width: 600px) {
+  .container {
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+  }
+  button {
+    padding: 8px 16px;
+    min-width: 80px;
+  }
+}
+
+
+
+/* For very wide screens (desktop/fullscreen) */
+@media (min-width: 1200px) {
+  .container {
+    justify-content: flex-start;
+  }
+  button {
+    padding: 15px 25px;
+  }
+}
+
+@media (max-width: 1750px) {
+  .sidebar {
+    display: none;
+  }
+}

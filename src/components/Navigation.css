@@ -1,0 +1,30 @@
+.navbar_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100% - 30px;
+  position: sticky;
+  padding: 0 30px;
+  height: 64px;
+  box-shadow: inset 0 -1px 0 0 #333;
+  transform: translateZ(0);
+  backdrop-filter: saturate(180%) blur(4px);
+  background: rgba(0, 0, 0, .8);
+  top: 0px
+}
+
+.navbar_nav {
+  
+}
+
+.navbar_links {
+  display: flex;
+  color: #fff;
+}
+
+.navbar_link {
+  text-decoration: none;
+  color: white;
+  margin-left: 15px;
+}
