@@ -24,6 +24,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #000000;
 }
 ol, ul {
 	list-style: none;
@@ -40,4 +41,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+input {
+	outline: none;
+}

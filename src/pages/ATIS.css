@@ -1,23 +1,23 @@
 .sidebar {
-  display: none;
+  margin-top: 3.75rem;
   position: fixed; /* Fixes the sidebar to the left side */
   top: 0;
   left: 0;
-  width: 600px; /* Adjust the width as needed */
+  width: 37.5rem; /* Adjust the width as needed */
   background-color: #222222; /* Sidebar background color */
-  height: calc(100vh - 148px); /* Height relative to the remaining space, e.g. 100px for the container */
+  height: calc(100vh - 12rem); /* Height relative to the remaining space, e.g. 100px for the container */
   overflow-y: auto; /* Allows the sidebar content to scroll if it exceeds height */
-  z-index: 1000; /* Keeps sidebar above other content */
+  z-index: 1; /* Keeps sidebar above other content */
 }
 
 .flight-block {
   display: flex;
-  background-color: #141414;
+  background-color: #222222;
   padding: 15px;
 }
 
 .sidebar > div:nth-child(even) .flight-block {
-  background-color: #222222;
+  background-color: #141414;
 }
 
 .flight-header {
@@ -158,8 +158,6 @@ button {
     min-width: 80px;
   }
 }
-
-
 
 /* For very wide screens (desktop/fullscreen) */
 @media (min-width: 1200px) {

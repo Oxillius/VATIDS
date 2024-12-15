@@ -1,1 +1,2 @@
-# VATIDS
+# vIDS
+## Virtual Information Display System

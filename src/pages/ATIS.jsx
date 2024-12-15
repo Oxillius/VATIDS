@@ -17,7 +17,7 @@ async function updateATIS(atisList) {
 
   for (const airport of atisList) {
     try {
-      const response = await fetch(`https://corsproxy.io/?` + encodeURIComponent(`https://datis.clowd.io/api/${airport}`));
+      const response = await fetch(`https://corsproxy.io/?url=` + encodeURIComponent(`https://datis.clowd.io/api/${airport}`));
       const data = await response.json();
       
       switch(data.length) {
@@ -52,9 +52,9 @@ export const ATISPage = () => {
       .then(res => res.json())
       .then (data => {
         console.log(data)
-        setBackendData(data) }
-     )
-      .catch(error => {console.log(error)})
+      }
+    )
+    .catch(error => {console.log(error)})
   }, [])
   */
 

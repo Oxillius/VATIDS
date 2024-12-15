@@ -1,21 +1,19 @@
-.navbar_header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100% - 30px;
+.navbar-header {
+  width: 100%;
   position: sticky;
-  padding: 0 30px;
-  height: 64px;
-  box-shadow: inset 0 -1px 0 0 #333;
+  height: 3.75rem;
   transform: translateZ(0);
-  backdrop-filter: saturate(180%) blur(4px);
-  background: rgba(0, 0, 0, .8);
-  top: 0px
+  background: #141414;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-.navbar_nav {
-  
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 .navbar_links {
@@ -26,5 +24,129 @@
 .navbar_link {
   text-decoration: none;
   color: white;
-  margin-left: 15px;
+  margin: auto 0.5rem;
+}
+
+.nav_info_container {
+  display: flex;
+  margin-right: auto;
+}
+
+.nav_info_container > p {
+  width: 4.25rem;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #080808;
+}
+
+.nav_info_container > h1 {
+  margin: auto 0 auto 1rem;
+}
+
+.nav-text-bar {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-right: 0.625rem;
+}
+
+.nav-textbox {
+  border: none;
+  padding: 0 0.75rem;
+  margin: auto 0;
+  height: 2.5rem;
+  width: 15rem;
+  background-color: #202020;
+  color: #fff;
+}
+
+.nav-text-bar > button {
+  border: none;
+  padding: 1.25rem;
+  margin: auto 0;
+  background-color: #0249C6 !important;
+  background-size: 80%;
+}
+
+.nav-button-link {
+  background-color: #202020;
+  padding: 1.25rem;
+  margin: auto .625rem auto 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+.error-button-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #202020;
+  margin: auto 0;
+  height: 2.5rem;
+}
+
+.error-button-container > button {
+  height: 2rem;
+  margin: auto 0.25rem auto 0;
+  padding: 0 0.75rem;
+  border: none;
+  background-color: #0249C6
+}
+
+.nav-error-textbox {
+  width: 22.5rem;
+  height: 1rem;
+  padding: 0.75rem;
+}
+
+.welcome-container {
+  position: relative; /* Ensures dropdown is positioned relative to the container */
+  display: inline-block; /* Makes the container fit the width of the button */
+}
+
+.welcome-username {
+  font-weight: bold;
+  border: none;
+  height: 100%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  border: 0;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  color: black;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.dropdown-menu p {
+  margin: 0 0 10px 0;
+}
+
+.dropdown-menu button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #0249C6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* SVG Images */
+
+.search-svg {
+  background: url('src/assets/SVG Files/search-svg.svg') no-repeat center;
+}
+
+.settings-svg {
+  background-image: url('src/assets/SVG Files/settings-svg.svg');
+}
+
+.storage-svg {
+  background-image: url('src/assets/SVG Files/storage-svg.svg');
 }
